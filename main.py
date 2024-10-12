@@ -9,8 +9,8 @@ import requests
 """查询频率，单位为秒，推荐为60"""
 CHECK_DELAY = 60
 """发生问题时，是否通知管理员(通知则把ID修改为机器人管理员的QQ)"""
-NOTIFY_ADMIN = True
-ADMIN_ID = 1900487324   # int
+NOTIFY_ADMIN = False
+ADMIN_ID = None   # int
 
 # https://api.live.bilibili.com/xlive/web-room/v1/index/getRoomBaseInfo?room_ids=room_id&req_biz=video
 # 注册插件
