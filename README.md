@@ -1,4 +1,4 @@
-# HelloPlugin
+# BreminderPlugin
 
 <!--
 ## 插件开发者详阅
@@ -33,10 +33,17 @@
 配置完成 [QChatGPT](https://github.com/RockChinQ/QChatGPT) 主程序后使用管理员账号向机器人发送命令即可安装：
 
 ```
-!plugin get <插件发布仓库地址>
+!plugin get https://github.com/Hanschase/BreminderPlugin
 ```
 或查看详细的[插件安装说明](https://qchatgpt.rockchin.top/develop/plugin-intro.html#%E6%8F%92%E4%BB%B6%E7%94%A8%E6%B3%95)
 
 ## 使用
+1.发送!appy [直播间房间号] 订阅推送，只能在群里发送
+2.发送!cancel [直播间房间号] 取消订阅，只能在群里发送
+3.发送!startrem 开启推送功能，注：只有开启了推送功能才能推送，只订阅是不会推送的，每次重启机器人都需要发送该指令
+![image](https://github.com/user-attachments/assets/1b3a2191-c617-45b4-b166-6a8fbfd0731a)
+查看直播间房间号的方法
+![image](https://github.com/user-attachments/assets/9f2b6feb-3c26-4ee2-9d30-5ab2beb03b3e)
+
 
 <!-- 插件开发者自行填写插件使用说明 -->
