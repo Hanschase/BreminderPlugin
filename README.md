@@ -44,7 +44,9 @@
 ![image](https://github.com/user-attachments/assets/5efcb913-5490-4099-86f9-c7cd8769a3c2)
 查看直播间房间号的方法<br>
 ![image](https://github.com/user-attachments/assets/8200429f-a57d-459b-afa4-dafd7dbae7fb)
-
+图片看不到就用链接
+[Alt](https://github.com/user-attachments/assets/5efcb913-5490-4099-86f9-c7cd8769a3c2"订阅演示")
+[Alt](https://github.com/user-attachments/assets/8200429f-a57d-459b-afa4-dafd7dbae7fb "订阅演示")
 
 
 <!-- 插件开发者自行填写插件使用说明 -->
