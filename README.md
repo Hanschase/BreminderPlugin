@@ -41,9 +41,10 @@
 1.发送!appy [直播间房间号] 订阅推送，只能在群里发送<br>
 2.发送!cancel [直播间房间号] 取消订阅，只能在群里发送 <br>
 3.发送!startrem 开启推送功能，注：只有开启了推送功能才能推送，只订阅是不会推送的，每次重启机器人都需要发送该指令<br>
-![image](https://github.com/user-attachments/assets/1b3a2191-c617-45b4-b166-6a8fbfd0731a)
+![image](https://github.com/user-attachments/assets/5efcb913-5490-4099-86f9-c7cd8769a3c2)
 查看直播间房间号的方法<br>
-![image](https://github.com/user-attachments/assets/9f2b6feb-3c26-4ee2-9d30-5ab2beb03b3e)
+![image](https://github.com/user-attachments/assets/8200429f-a57d-459b-afa4-dafd7dbae7fb)
+
 
 
 <!-- 插件开发者自行填写插件使用说明 -->
