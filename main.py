@@ -70,6 +70,8 @@ class BreminderPlugin(BasePlugin):
                         live_status = self.check_room_live(room_id)
                         if live_status == 0:
                             self.subscription[group_id][room_id][0] = 0  # 修改未开播状态
+                        elif live_status == 2: # 增加轮播状态
+                            self.subscription[group_id][room_id][0] = 0  # 修改未开播状态
                     else:
                         if NOTIFY_ADMIN:
                             await ctx.send_message("person",ADMIN_ID,[f"直播间通知插件出了点问题，去看看后台,房间号{room_id},群号：{group_id}，状态码：{self.subscription[group_id][room_id][0]}"])
