@@ -69,7 +69,7 @@ class BreminderPlugin(BasePlugin):
                             await self.notify_person(group_id,room_id,ctx) # 通知群友
                     elif int(self.subscription[group_id][room_id][0]) == 1:  # 上一时段为开播时
                         live_status = self.check_room_live(room_id)
-                        if live_status == 0:
+                        if live_status == 0 or 2:   # 增加轮播状态判定
                             self.subscription[group_id][room_id][0] = 0  # 修改未开播状态
                     else:
                         if NOTIFY_ADMIN:
