@@ -20,7 +20,6 @@ class BreminderPlugin(BasePlugin):
     def __init__(self, host: APIHost):
         # 检测是否存在subscription.json
         if not os.path.exists("subscription.json"):
-            self.ap.logger.error("The file subscription.json was not found; it has been created and initialized.")
             with open("subscription.json", "w", encoding="utf-8") as f:
                 data = {
                     "group_ids":[]
@@ -69,7 +68,7 @@ class BreminderPlugin(BasePlugin):
                             await self.notify_person(group_id,room_id,ctx) # 通知群友
                     elif int(self.subscription[group_id][room_id][0]) == 1:  # 上一时段为开播时
                         live_status = self.check_room_live(room_id)
-                        if live_status == 0 or 2:   # 增加轮播状态判定
+                        if live_status == 0:
                             self.subscription[group_id][room_id][0] = 0  # 修改未开播状态
                     else:
                         if NOTIFY_ADMIN:
@@ -104,6 +103,7 @@ class BreminderPlugin(BasePlugin):
                 f"\n直播间地址：{room_url}"
             ]))
             await ctx.send_message("person", ADMIN_ID,[f"朝{group_id}的{atperson}发送了订阅信息"])
+            self.ap.logger.info(f"朝{group_id}的{atperson}发送了订阅信息")
         except Exception as e:
             self.ap.logger.error(f"在调用notify_person函数时，发生错误：{e}")
 
